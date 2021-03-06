@@ -4,9 +4,12 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import lombok.extern.java.Log;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.persistence.*;
-
+//@Slf4j
+@Log
 @NoArgsConstructor
 @AllArgsConstructor
 @Getter
@@ -24,4 +27,6 @@ public class Car {
     private String color;
     private String fuelKind;
 
+    //log.severe("This should be inside a method!!");
+//
 }
