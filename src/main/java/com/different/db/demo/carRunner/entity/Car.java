@@ -28,5 +28,6 @@ public class Car {
     private String fuelKind;
 
     //log.severe("This should be inside a method!!");
+
 //
 }
