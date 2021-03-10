@@ -7,4 +7,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface CarRepo extends CrudRepository<Car ,Long > {
+
+    Car findCarByCarURL(String url);
 }

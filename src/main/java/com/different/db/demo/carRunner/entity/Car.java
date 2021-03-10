@@ -1,9 +1,6 @@
 package com.different.db.demo.carRunner.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
+import lombok.*;
 import lombok.extern.java.Log;
 import lombok.extern.slf4j.Slf4j;
 
@@ -15,6 +12,7 @@ import javax.persistence.*;
 @Getter
 @Setter
 @Entity
+@Builder
 @Table
 public class Car {
     @Id
@@ -26,6 +24,8 @@ public class Car {
     private String brand;
     private String color;
     private String fuelKind;
+    private String carURL;
+
 
     //log.severe("This should be inside a method!!");
 
